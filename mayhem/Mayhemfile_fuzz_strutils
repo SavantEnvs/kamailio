@@ -1,0 +1,9 @@
+project: savantenvs/kamailio
+target: fuzz_strutils
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_strutils/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_strutils
+    libfuzzer: true
+    timeout: 5
