@@ -1,0 +1,9 @@
+project: savantenvs/kamailio
+target: fuzz_parse_digest
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_parse_digest/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_parse_digest
+    libfuzzer: true
+    timeout: 5

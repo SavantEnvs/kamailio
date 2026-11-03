@@ -1,0 +1,9 @@
+project: savantenvs/kamailio
+target: fuzz_msg_translator
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_msg_translator/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_msg_translator
+    libfuzzer: true
+    timeout: 5
