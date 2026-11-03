@@ -1,0 +1,9 @@
+project: savantenvs/kamailio
+target: fuzz_basex
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_basex/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_basex
+    libfuzzer: true
+    timeout: 5

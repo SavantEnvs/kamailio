@@ -1,0 +1,1 @@
+$var(x) $avp(s:name) $hdr(Call-ID) $(hdr(Via)[0]) $sht(a=>b)

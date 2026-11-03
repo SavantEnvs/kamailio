@@ -1,0 +1,9 @@
+project: savantenvs/kamailio
+target: fuzz_srjson
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_srjson/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_srjson
+    libfuzzer: true
+    timeout: 5

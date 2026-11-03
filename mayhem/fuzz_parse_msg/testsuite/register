@@ -1,0 +1,10 @@
+REGISTER sip:registrar.example.com SIP/2.0
+Via: SIP/2.0/TCP client.example.com:5060;branch=z9hG4bKnashds7
+Max-Forwards: 70
+To: Bob <sip:bob@example.com>
+From: Bob <sip:bob@example.com>;tag=456248
+Call-ID: 843817637684230@998sdasdh09
+CSeq: 1826 REGISTER
+Contact: <sip:bob@192.0.2.4>;expires=3600
+Content-Length: 0
+
